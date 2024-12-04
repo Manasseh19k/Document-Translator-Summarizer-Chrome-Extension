@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Display the preview in the UI
             document.getElementById('outputText').textContent = data.preview;
-            document.getElementById('downloadBtn').style.display = 'block'; // Show the download button
+            document.getElementById('downloadBtn').style.display = 'block';
 
             // Store the content and format for download
             window.generatedContent = data.preview;
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData();
         formData.append('document', fileInput.files[0]);
-        formData.append('action', 'summarize');  // Set action to summarize
+        formData.append('action', 'summarize');
 
         try {
             // Show loading message or spinner
@@ -69,11 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Display the summary preview in the UI
             document.getElementById('outputText').textContent = data.preview;
-            document.getElementById('downloadBtn').style.display = 'block'; // Show the download button
+            document.getElementById('downloadBtn').style.display = 'block';
 
             // Store the content and format for download
             window.generatedContent = data.preview;
-            window.generatedFormat = "word"; // Default format or adjust as needed
+            window.generatedFormat = "word";
 
         } catch (error) {
             console.error('Error:', error);
@@ -90,12 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Send reviews to the backend to summarize
                     const summary = await getReviewSummary(response.reviews);
                     document.getElementById('summaryText').textContent = summary;
-                    document.getElementById('reviewSummary').style.display = 'block'; // Show the summary section
-                    document.getElementById('downloadReviewBtn').style.display = 'block'; // Show download button for review summary
+                    document.getElementById('reviewSummary').style.display = 'block';
+                    document.getElementById('downloadReviewBtn').style.display = 'block';
                 } else {
                     document.getElementById('summaryText').textContent = 'No reviews found on this page!';
-                    document.getElementById('reviewSummary').style.display = 'block'; // Show message even if no reviews found
-                    document.getElementById('downloadReviewBtn').style.display = 'none'; // Hide download button
+                    document.getElementById('reviewSummary').style.display = 'block';
+                    document.getElementById('downloadReviewBtn').style.display = 'none';
                 }
             });
         });
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData();
         formData.append('document', fileInput.files[0]);
-        formData.append('action', 'rewrite');  // Set action to rewrite
+        formData.append('action', 'rewrite');
 
         try {
             // Show loading message or spinner
@@ -128,11 +128,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Display the rewritten text in the UI
             document.getElementById('outputText').textContent = data.preview;
-            document.getElementById('downloadBtn').style.display = 'block'; // Show the download button
+            document.getElementById('downloadBtn').style.display = 'block';
 
             // Store the content and format for download
             window.generatedContent = data.preview;
-            window.generatedFormat = "word"; // Default format or adjust as needed
+            window.generatedFormat = "word";
 
         } catch (error) {
             console.error('Error:', error);
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('downloadReviewBtn').addEventListener('click', async () => {
         const summaryData = {
             content: document.getElementById('summaryText').textContent,
-            format: "word", // You can change the format to Word or PDF as needed
+            format: "word",
         };
 
         try {
