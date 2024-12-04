@@ -19,8 +19,8 @@ app.use(bodyParser.json());
 const upload = multer({ dest: 'uploads/' });
 
 // Initialize GoogleGenerativeAI with your API_KEY (from .env file)
-const genAI = new GoogleGenerativeAI("AIzaSyCnS3qRaoMIT1YtoSAm7xgi0vqOH4Sypu4");
-const fileManager = new GoogleAIFileManager("AIzaSyCnS3qRaoMIT1YtoSAm7xgi0vqOH4Sypu4");
+const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+const fileManager = new GoogleAIFileManager(process.env.API_KEY);
 
 const model = genAI.getGenerativeModel({
   model: "gemini-1.5-flash",
