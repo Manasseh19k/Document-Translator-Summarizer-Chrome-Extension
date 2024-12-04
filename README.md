@@ -1,5 +1,6 @@
 
 # **Document Translator & Summarizer Chrome Extension**
+![Alt text]("Document-Translator-Summarizer-Chrome-Extension/assets/Screenshot 2024-12-03 205244.png")
 
 ## **Description**
 
