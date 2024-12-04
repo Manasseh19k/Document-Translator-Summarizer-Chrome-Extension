@@ -1,14 +1,14 @@
-Description
+# Description
 The Document Translator & Summarizer Chrome extension allows users to quickly translate, summarize, and rewrite documents directly in the browser. Whether you are working with lengthy reports, e-commerce reviews, or need to translate documents to a different language, this extension provides a convenient and efficient solution for content processing on the web.
 
-Key Features:
-Translate Documents: Upload a document (PDF, DOCX, etc.) and translate it into any language.
+# Key Features:
+***Translate Documents: Upload a document (PDF, DOCX, etc.) and translate it into any language.***
 Summarize Documents: Summarize large documents to quickly get the main points and save time.
 Rewrite Documents: Reword paragraphs or sentences to improve clarity, simplify complex language, or make the text unique.
 Review Summarization: Extract and summarize product reviews from e-commerce sites like Amazon and eBay.
 This extension streamlines document processing by leveraging cutting-edge AI models to help users interact with content more efficiently.
 
-Problem Being Solved
+# Problem Being Solved
 This extension addresses the challenges of dealing with large documents or multiple sources of content on the web, particularly:
 
 Time-consuming translations: Translating entire documents manually can be slow and difficult.
@@ -16,11 +16,11 @@ Overwhelming amounts of information: Large documents and reviews can be overwhel
 Need for rewriting: Users often need help rewriting documents, whether for clarity or paraphrasing.
 By automating the translation, summarization, and rewriting of documents directly within the browser, this extension saves users time and helps them focus on the most important information.
 
-APIs Used
+# APIs Used
 1. Google Gemini API (Generative AI)
 Google Gemini (formerly known as Google AI) is used for all the AI-powered functionalities such as translation, summarization, and rewriting. The extension utilizes this API to process and manipulate document content and to generate new summaries or rewritten versions.
 
-Used For:
+# Used For:
 
 Translation: Automatically translating documents into various languages.
 Summarization: Creating concise summaries of documents or reviews.
