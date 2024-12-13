@@ -77,10 +77,9 @@ app.post('/process-document', upload.single('document'), async (req, res) => {
                 { text: "Summarize this document" },
             ]);
         } else if (action === 'rewrite') {
-            // New action for rewriting the document
             result = await model.generateContent([
                 { fileData: { mimeType: uploadResponse.file.mimeType, fileUri: uploadResponse.file.uri } },
-                { text: "Rewrite this document" }, // Prompt for rewriting
+                { text: "Rewrite this document" },
             ]);
         } else {
             return res.status(400).send('Invalid action');

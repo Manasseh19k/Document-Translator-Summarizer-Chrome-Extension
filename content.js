@@ -13,6 +13,7 @@ function getProductReviews() {
     // Detect which website is being visited
     const site = getSiteName();
 
+    // Extract reviews based on the site
     if (site === 'amazon') {
         reviews = getAmazonReviews();
     } else if (site === 'ebay') {
@@ -21,6 +22,7 @@ function getProductReviews() {
         reviews = 'No reviews found for this website.';
     }
 
+    // Return the extracted reviews
     return reviews.trim();
 }
 
@@ -41,6 +43,7 @@ function getSiteName() {
 function getAmazonReviews() {
     let reviews = '';
     
+    // Example selector for Amazon reviews
     const reviewElements = document.querySelectorAll('.review-text-content span');
 
     reviewElements.forEach((reviewElement) => {
