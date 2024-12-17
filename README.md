@@ -1,6 +1,6 @@
 
 # **Document Translator & Summarizer Chrome Extension**
-![Screenshot 2024-12-03 205244.png](assets%2FScreenshot%202024-12-03%20205244.png)
+![Screenshot 2024-12-03 205244.png](assets%Screenshot 2024-12-01 205904.png)
 
 Link to the extension: [link](https://chromewebstore.google.com/detail/document-translator-summa/inciilnhllofehhihomhfkgldpfmpeoa?authuser=0&hl=en-GB)
 
