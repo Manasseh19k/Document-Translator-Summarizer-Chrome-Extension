@@ -2,6 +2,8 @@
 # **Document Translator & Summarizer Chrome Extension**
 ![Screenshot 2024-12-03 205244.png](assets%2FScreenshot%202024-12-03%20205244.png)
 
+Link to the extension: [link](https://chromewebstore.google.com/detail/document-translator-summa/inciilnhllofehhihomhfkgldpfmpeoa?authuser=0&hl=en-GB)
+
 ## **Description**
 
 The **Document Translator & Summarizer** Chrome extension allows users to quickly translate, summarize, and rewrite documents directly in the browser. Whether you are working with lengthy reports, e-commerce reviews, or need to translate documents to a different language, this extension provides a convenient and efficient solution for content processing on the web.
